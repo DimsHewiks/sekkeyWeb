@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.User_Name{
+    color: var(--MaintextColor);
+    margin-right: 20px;
+    font-family: var(--textFont);
+}.User_Name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+ }
+.User_Img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--mainColor);
+
+}

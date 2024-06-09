@@ -1,0 +1,19 @@
+
+.main{
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &img{
+        width: 150px;
+        height: 150px;
+    }
+
+}

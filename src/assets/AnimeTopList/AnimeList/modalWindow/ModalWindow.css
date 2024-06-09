@@ -1,0 +1,113 @@
+.MainModal{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 800px;
+    height: 350px;
+    background-color: var(--blackMainColor);
+    z-index: 1;
+    opacity: .95;
+    border-radius: 10px;
+    overflow: hidden;
+    & .imgBlock{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 25%;
+        & img{
+            max-height: 100%;
+            width: 220px;
+        }
+    }
+    & .Info{
+        width: 70%;
+        height: 90%;
+        padding-left: 20px;
+        padding-top: 10px;
+        overflow-y: auto;
+        padding-bottom: 10px;
+        & h1{
+            font-family: "Roboto", sans-serif;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        & .genresBlock{
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            & span{
+                background-color: var(--mainColor);
+                color: white;
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                padding: 5px;
+                margin-bottom: 5px;
+                margin-right: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #3D3D3D;
+                }
+            }
+        }
+        & h4{
+
+            margin-top: 20px;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+        & .studios_Block{
+            margin-top: 20px;
+            width: 90%;
+            display: flex;
+
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            flex-direction: row;
+            & p{
+                font-family: "Roboto", sans-serif;
+                color: var(--mainColor);
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+            & .MainStudisBlock{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            & .studios_info{
+                border: solid var(--mainColor) 2px;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px 10px 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                min-height: 60px;
+                width: 100px;
+                & img{
+                    width: 100%;
+                    background-color: #3D3D3D;
+                }
+                & h4{
+                    font-family: "Roboto", sans-serif;
+                    color: white;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

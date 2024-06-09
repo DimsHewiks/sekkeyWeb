@@ -1,0 +1,64 @@
+.main{
+    z-index: 1;
+    top: 50px;
+    right: 50px;
+    border-radius: 5px;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--blackMainColor);
+    padding: 10px 10px;
+}.main > h2{
+     font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1.3rem;
+ }
+.main > h4{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: .9rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.inputBlock{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.inputBlock > p{
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.inputBlock > input{
+    outline: none;
+    border: none;
+    background-color: var(--blackMainColor);
+    border-bottom: var(--mainColor) solid 2px;
+    padding: 3px;
+    color: white;
+}
+.btnSend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--mainColor);
+    margin-top: 20px;
+}.btnSend > p{
+
+     color: white;
+     font-family: "Roboto", sans-serif;
+    border-right: 5px;
+
+ }
