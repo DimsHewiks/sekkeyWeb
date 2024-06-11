@@ -1,0 +1,80 @@
+b{
+    text-decoration: underline;
+    margin-right: 20px;
+    color: var(--mainColor);
+    font-family: 'roboto', 'sans-serif';
+    cursor: pointer;
+    &:hover{
+        color: rgb(170, 118, 20);
+    }
+}
+
+
+
+.mainBlock{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    min-height: 10px;
+    max-height: 700px;
+    overflow-y: auto;
+    z-index: 3;
+  
+    background-color: rgba(58, 58, 58, 0.952);
+}
+.counts{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    top: 0;
+    padding: 10px 0 10px 0;
+    & p{
+        padding: 10px;
+        color: aliceblue;
+        font-family: 'roboto', 'sans-serif';
+    }
+}
+.AnimeCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    
+    overflow: hidden;
+    transition: .2s;
+    &:hover{
+        background-color: var(--mainColor);
+    }
+}
+.ImgBlock{
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ImgBlock > img{
+    width:  100%;
+}
+.infoBlock{
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    & h4{
+        color: white;
+        font-family: 'roboto', 'sans-serif';
+        font-size:  1.4rem;
+    }
+}
+.infoTitle{
+    width: 100%;
+    & h4{
+        font-weight: 100;
+        font-size: 1.1rem;
+    }
+}
