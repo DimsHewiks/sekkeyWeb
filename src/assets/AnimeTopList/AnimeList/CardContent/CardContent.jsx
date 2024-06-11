@@ -14,7 +14,7 @@ export default function CardContent({data}){
     let position ={
 
     }
-
+ 
 
     function abortFetching() {
         console.log('Now aborting');
