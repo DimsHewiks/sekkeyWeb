@@ -36,7 +36,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 10px;
+    padding: 20px;
     & h4{
         font-family: "Roboto", sans-serif;
         font-size: 1.6rem;
@@ -51,7 +51,7 @@
         & b{
             color: var(--mainColor);
             padding: 3px;
-            font-weight: 300;
+            font-weight: 700;
         }
     }
 }

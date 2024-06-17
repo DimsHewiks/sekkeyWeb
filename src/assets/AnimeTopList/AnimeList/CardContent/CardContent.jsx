@@ -14,7 +14,15 @@ export default function CardContent({data}){
     let position ={
 
     }
- 
+    
+        if(data['russian'].length > 30){
+            data['russian'] = data['russian'].slice(0, 30) + '...'
+        }
+        if(data['name'].length > 30){
+            data['name'] = data['name'].slice(0, 30) + '...'
+        }
+  
+
 
     function abortFetching() {
         console.log('Now aborting');
