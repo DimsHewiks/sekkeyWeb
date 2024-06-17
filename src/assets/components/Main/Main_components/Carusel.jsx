@@ -87,8 +87,6 @@ export default  function Carusel(){
                     setMove((prev) =>prev+100)
                 }break;
         }
-
-
     }
     
     return(

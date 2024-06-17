@@ -1,7 +1,58 @@
 .main{
     width: 100%;
-    height: 500px;
-    background-color: var(--blackMainColor);
+    height: 580px;
+
     margin-top: 20px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    & .longBlock{
+        width: 65%;
+        background-color: black;
+        height: 45%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        & img{
+            transition: .3s;
+            width: 110%;
+        }
+        &:hover > img{
+            opacity: .3;
+        }
+        & h4{
+            position: absolute;
+            color: white;
+            font-family: 'roboto', 'sans-serif';
+            font-size: 1.6rem;
+        }
+    }
+    & .smallBlock{
+        height: 35%;
+        background-color: black;
+        height: 45%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img{
+            transition: .3s;
+            height: 110%;
+        }
+        &:hover > img{
+            opacity: .3;
+        }
+        & h4{
+            position: absolute;
+            color: white;
+            font-family: 'roboto', 'sans-serif';
+            font-size: 1.6rem;
+        }
+    }
 }
