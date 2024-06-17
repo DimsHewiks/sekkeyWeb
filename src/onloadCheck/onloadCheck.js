@@ -3,5 +3,5 @@ export function onloadCheck(){
     window.onload = function () {
         load = true;
       }
-    return true;  
+    return load;  
 }
