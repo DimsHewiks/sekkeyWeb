@@ -1,4 +1,5 @@
 import style from './auth.module.css'
+import { Link } from 'react-router-dom'
 export default function Auth({user}){
     if(!user){
         console.log(user)
@@ -14,9 +15,11 @@ export default function Auth({user}){
                     <input placeholder='пароль' type='password'/>
                 </div>
                 <div className={style.btnSend}>
-                    <p>Войти</p>
+                    <p>
+                        <Link to='/auth'>Войти</Link>
+                    </p>
                 </div>
-                <h4>Регистрация</h4>
+                <h4><Link to='/auth'>Регистрация</Link></h4>
             </div>
         )
     }
