@@ -1,4 +1,4 @@
-import Header from "./assets/components/header/Header.jsx";
+import Layout from "./routes/Layout/Layout.jsx";
 import Main from "./assets/components/Main/Main.jsx";
 import Auth from "./routes/authPage/Auth.jsx";
 
@@ -19,9 +19,13 @@ function App() {
     <>
       {!onload && <LoaderScreen></LoaderScreen>}
       <Routes>
-        <Route path="/" element ={<Main></Main>} />
-        <Route path="/auth" element ={<Auth></Auth>} />
-        <Route path="*" element ={<h1>Куда полез бля</h1>} />
+        
+        <Route path="/" element = { <Layout />}>
+          <Route index element ={<Main></Main>} />
+          <Route path="*" element ={<h1>Куда полез бля</h1>} />
+        </Route>
+
+        <Route path="auth" element ={<Auth></Auth>} />
       </Routes>
       
     </>

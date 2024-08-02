@@ -11,7 +11,7 @@ import Header from '../header/Header.jsx';
 export default function Main(){
     const [AnimeCard, SetanimeCard] = useState('season');
     return(
-        <><Header></Header>
+        <>
             <article className={style.Main}>
                 <Carusel></Carusel>
                 <TypeListBtnBlock SetanimeCard = {SetanimeCard}></TypeListBtnBlock>

@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 800px;
+    transition: .1s;
     & .FormBlock{
         width: 400px;
         height: 60%;
@@ -54,6 +55,66 @@
                     }
                 }
             }
+            & .BtnBlock{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & .SingInBtn{
+                    width: 40%;
+                    height: 50px;
+                    background-color: #F38663;
+                    margin-top: 20px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    & p{
+                        color: white;
+                        font-family: 'roboto', 'sans-serif';
+                        
+                    }
+                    &:hover{
+                        background-color: #c7522b;
+                    }
+                }
+                & .SupportBtn{
+                    width: 40%;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    & p{
+                        color: #383838;
+                        font-family: 'roboto', 'sans-serif';
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                
+            }
+            & .SingUpBtn{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #4d4d4d;
+                    margin-top: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    & p{
+                        color: white;
+                        font-family: 'roboto', 'sans-serif';
+                    }
+                    &:hover{
+                        background-color: #383838;
+                    }
+                }
         }
+        
     }
 }
