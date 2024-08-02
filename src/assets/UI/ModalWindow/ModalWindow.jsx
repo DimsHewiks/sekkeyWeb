@@ -2,15 +2,11 @@ import { createPortal } from "react-dom";
 import Style from './ModalWindow.module.css'
 
 export default function ModalWindow({title, text, modalType, CloseState}){
+    
     // modalType
     // native - уже готовый шаблон модалки, нужно только вставить текст и заголовок
-    //custom - кастомный макет, где разработчик отправляет свой нарисованный макет внутрь модалки
+    // custom - кастомный макет, где разработчик отправляет свой нарисованный макет внутрь модалки
 
-
-    
-    
-    
-    
     return(
         <>
         {createPortal(
@@ -41,8 +37,6 @@ export default function ModalWindow({title, text, modalType, CloseState}){
                     </>
                     : null
                     }
-                    
-                    
                 </div>
             </div>
             </div>
