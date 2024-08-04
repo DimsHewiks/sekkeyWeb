@@ -1,6 +1,12 @@
+import { useRef } from 'react'
 import Style from '../Registration.module.css'
 
 export default function StepRegTwo(){
+    const dataUser = {
+        login: useRef(),
+        password: useRef(),
+        secPassword: useRef()
+    }
     return(
         <div className={Style.stepBlock}>
             <div className={Style.InputBlock}>

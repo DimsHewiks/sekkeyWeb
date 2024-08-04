@@ -2,7 +2,8 @@ import Style from './Registration.module.css'
 import HeaderAuth from '../authPage/UI/HeaderAuth/HeaderAuth'
 import { useState } from 'react'
 import StepRegBlocks from './stepRegBlocks';
-
+import RoteSlides from './SlideBtnElements/RouteSlides';
+localStorage.setItem('user', '123')
 export default function(){
     const [step, SetStep] = useState(3);
 
@@ -32,7 +33,18 @@ export default function(){
                 </div>
                 <form>
                     <StepRegBlocks step={step}/>
+                    <RoteSlides page = {step}/>
                 </form>
+                <div className={Style.InfoBlock}>
+                
+                    <div className={Style.CreateBy}>
+                        Разработано DimsHewk
+                    </div>
+
+                    <div>
+                        c 2024 - Все права защищены
+                    </div>
+                </div>
             </div>
         </div>
         </>
