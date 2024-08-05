@@ -11,7 +11,7 @@ export default function AuthBlock(){
         mainBlockView.current.style.opacity = 0;
         console.log(mainBlockView)
         setTimeout(()=>{
-            window.location.href = '/'
+            window.location.href = '/registration'
         }, .2)
     }
 
