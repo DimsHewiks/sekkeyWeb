@@ -5,13 +5,29 @@ import StepRegBlocks from './stepRegBlocks';
 import RoteSlides from './SlideBtnElements/RouteSlides';
 localStorage.setItem('user', '123')
 export default function(){
-    const [step, SetStep] = useState(3);
+    const [step, SetStep] = useState(1);
 
     const steps = [
         'Личные данные  >',
         'Данные для входа  >',
         'Отображение'
     ]
+
+    const [fullUSerData, SetFullUserData] = useState({
+        name: '',
+        birthday: '',
+        email: '',
+        login: '',
+        password: '',
+        secPassword: '',
+    });
+
+    console.log(fullUSerData);
+
+
+
+
+
     function setStepWindow(count){
         SetStep(count)
     }
@@ -32,7 +48,7 @@ export default function(){
                     }
                 </div>
                 <form>
-                    <StepRegBlocks step={step}/>
+                    <StepRegBlocks step={step} userData={fullUSerData} SetUserData={SetFullUserData}/>
                     <RoteSlides page = {step}/>
                 </form>
                 <div className={Style.InfoBlock}>

@@ -1,6 +1,6 @@
 import Style from '../Registration.module.css'
 
-export default function StepRegThree(){
+export default function StepRegThree({userData, SetUserData}){
     return(
         <div className={Style.stepBlock}>
             <div className={Style.InputBlock}>
