@@ -2,7 +2,7 @@ import SlideOneBtn from "./SildeOneBtn"
 import SlideTwoBtn from "./SlideTwoBtn"
 import SlideThreeBtn from "./SlideThreeBtn"
 
-export default function RoteSlides({page = 1}){
+export default function RoteSlides({page = 1, userData, SetUserData}){
     switch(page){
         case 1:{
             return ( <SlideOneBtn /> )
@@ -11,7 +11,7 @@ export default function RoteSlides({page = 1}){
             return ( <SlideTwoBtn /> )
         }
         case 3:{
-            return ( <SlideThreeBtn /> )
+            return ( <SlideThreeBtn userData={userData}/> )
         }
         default:{
             return (

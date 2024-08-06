@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import Style from './authBlock.module.css'
-
+import AuthBackGround from '../../../../animates/authAnimateBackGround/AuthBackGround';
 export default function AuthBlock(){
 
 
@@ -20,6 +20,7 @@ export default function AuthBlock(){
 
     return(
         <>
+        <AuthBackGround />
         <div ref ={mainBlockView} className={Style.mainBlock} style={{opacity: 1}}>
            <div className={Style.FormBlock}>
                 <h2 className={Style.MainTitle}>Авторизация</h2>

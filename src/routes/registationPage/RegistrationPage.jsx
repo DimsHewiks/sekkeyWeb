@@ -3,8 +3,9 @@ import HeaderAuth from '../authPage/UI/HeaderAuth/HeaderAuth'
 import { useState } from 'react'
 import StepRegBlocks from './stepRegBlocks';
 import RoteSlides from './SlideBtnElements/RouteSlides';
+import AuthBackGround from '../../animates/authAnimateBackGround/AuthBackGround';
 localStorage.setItem('user', '123')
-export default function(){
+export default function RegistrationPage(){
     const [step, SetStep] = useState(1);
 
     const steps = [
@@ -20,19 +21,15 @@ export default function(){
         login: '',
         password: '',
         secPassword: '',
+        avatar: ''
     });
-
-    console.log(fullUSerData);
-
-
-
-
 
     function setStepWindow(count){
         SetStep(count)
     }
     return(
         <>
+        <AuthBackGround />
         <HeaderAuth page='Регистрация'/>
         <div className={Style.mainBlock}>
             <div className={Style.mainRegForm}>
@@ -49,7 +46,7 @@ export default function(){
                 </div>
                 <form>
                     <StepRegBlocks step={step} userData={fullUSerData} SetUserData={SetFullUserData}/>
-                    <RoteSlides page = {step}/>
+                    <RoteSlides page = {step} userData={fullUSerData} SetUserData={SetFullUserData}/>
                 </form>
                 <div className={Style.InfoBlock}>
                 

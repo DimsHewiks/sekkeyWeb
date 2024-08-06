@@ -1,0 +1,55 @@
+.MainAuthBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    z-index: -1;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 65%, rgba(255,210,166,1) 100%); 
+
+    & .cloud1{
+        width: 20%;
+        position: absolute;
+        animation: Cloud1  10s infinite linear;
+        opacity: .5;
+        top: 40px;
+        left: -40%;
+    }
+    & .cloud2{
+        width: 10%;
+        position: absolute;
+        animation: Cloud1  20s infinite  linear;
+        opacity: .9;
+        top: 100px;
+        left: -40%;
+    }
+    & .cloud3{
+        width: 30%;
+        position: absolute;
+        animation: Cloud1 15s infinite  ;
+        opacity: .7;
+        top: 200px;
+        left: -40%;
+    }
+    & .cloud4{
+        width: 50%;
+        position: absolute;
+        animation: Cloud1 30s infinite linear;
+        left: -40%;
+        top: 80px;
+        opacity: .3;
+    }
+}
+
+@keyframes Cloud1 {
+    0%{
+        left: -70%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
