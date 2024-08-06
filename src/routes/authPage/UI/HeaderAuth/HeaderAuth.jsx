@@ -1,4 +1,4 @@
-
+import Style from './header.module.css'
 
 
 export default function HeaderAuth({page = 'Авторизация'}){
