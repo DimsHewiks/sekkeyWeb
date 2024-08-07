@@ -1,0 +1,53 @@
+.mainBlock{
+    position:absolute;
+    width: 300px;
+    min-height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: 10px;
+    left: 42%;
+    overflow: hidden;
+    background-color: white;
+    opacity: 1;
+
+    & .blockHeader{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(209, 152, 99);
+        padding: 5px;
+
+        & h4{
+            font-family: 'roboto', 'sans-serif';
+            color: white;
+            margin-left: 10px;
+        }
+
+        & .CloseBtn{
+            width: 30px;
+            height: 100%;
+            
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'roboto', 'sans-serif';
+            color: white;
+            margin-right: 10px;
+        }
+        
+    }
+    .popupBody{
+        padding: 10px;
+
+        & p{
+            font-family: 'roboto', 'sans-serif';
+            color: grey;
+        }
+    }
+}

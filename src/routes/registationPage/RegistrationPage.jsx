@@ -45,8 +45,16 @@ export default function RegistrationPage(){
                     }
                 </div>
                 <form>
-                    <StepRegBlocks step={step} userData={fullUSerData} SetUserData={SetFullUserData}/>
-                    <RoteSlides page = {step} userData={fullUSerData} SetUserData={SetFullUserData}/>
+                    <StepRegBlocks
+                        step={step}
+                        userData={fullUSerData} 
+                        SetUserData={SetFullUserData}
+                    />
+                    <RoteSlides 
+                        page = {step} 
+                        SetStep = {SetStep}
+                        userData={fullUSerData} 
+                        SetUserData={SetFullUserData}/>
                 </form>
                 <div className={Style.InfoBlock}>
                 
