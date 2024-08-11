@@ -7,6 +7,7 @@ import RegistrationPage from "./routes/registationPage/RegistrationPage.jsx";
 import {useEffect, useState} from "react";
 import LoaderScreen from "./loaderScreen/LoaderScreen.jsx";
 import { Route, Routes, Link } from 'react-router-dom'
+import AnimeMainPage from "./routes/animePage/AnimeMainPage/AnimeMainPage.jsx";
 function App() {
 
   const [onload, setOnload] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         
         <Route path="/" element = { <Layout />}>
           <Route index element ={<Main></Main>} />
+          <Route path="/anime" element ={<AnimeMainPage />} />
           <Route path="*" element ={<h1>Куда полез бля</h1>} />
         </Route>
         <Route path="/registration" element = {<RegistrationPage />} />
