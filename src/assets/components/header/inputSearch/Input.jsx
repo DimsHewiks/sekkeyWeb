@@ -56,7 +56,7 @@ export  default function HeaderInput(){
             <p>{genresList}</p>
             </div>
             {animeList.length > 0 ?
-            <SearchAnimeBlock  list={animeList}/>
+            <SearchAnimeBlock  list={animeList} setList ={setAnimeList}/>
         : null}
         </>
     )
