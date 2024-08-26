@@ -4,7 +4,6 @@ export async function getFranchiseById(id){
         method: 'GET',
     }).then(result => result.json())
         .then(data =>{
-            console.log(data)
             return data;
         })
 }
