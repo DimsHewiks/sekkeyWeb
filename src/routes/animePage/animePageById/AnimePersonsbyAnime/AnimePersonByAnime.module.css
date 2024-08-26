@@ -1,0 +1,25 @@
+.MainBlock{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title{
+    color: #b6664c;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+.card{
+    width: 150px;
+    margin-right: 60px;
+
+    & img{
+      width: 100%;
+    }
+}
+.name{
+    color: #b6664c;
+    font-family: "Roboto", sans-serif;
+}

@@ -2,7 +2,6 @@ import Style from './ScreenshotBlock.module.css'
 
 export default function ScreenshotBlock({images}){
 
-    console.log(images)
     return(
         <>
         <div className={Style.MainBlock}>

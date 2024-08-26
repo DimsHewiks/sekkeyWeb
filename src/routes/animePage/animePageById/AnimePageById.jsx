@@ -6,6 +6,7 @@ import Style from './AnimePageById.module.css'
 import InfoHeader from "./infoHeader/InfoHeader.jsx";
 import ScreenshotBlock from "./screenshotsBlock/ScreenshotBlock.jsx";
 import AnimeFranchiseById from "./AnimeFranchiseById/AnimeFranchiseByid.jsx";
+import AnimePersonByAnime from "./AnimePersonsbyAnime/AnimePersonByAnime.jsx";
 
 export default function AnimePageById(){
     const idParam = useParams();
@@ -30,6 +31,7 @@ export default function AnimePageById(){
                 </h2>
                 <p className={Style.japaneseName}>{animeInfo['japanese']}</p>
                 <InfoHeader info={animeInfo}/>
+                <AnimePersonByAnime id  = {animeInfo['id']} />
                 <ScreenshotBlock images={animeInfo['screenshots']}/>
                 <AnimeFranchiseById id = {animeInfo['id']}/>
             </>
