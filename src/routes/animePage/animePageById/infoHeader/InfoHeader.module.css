@@ -1,7 +1,6 @@
 .infoHeader{
     width: 100%;
-    height: 400px;
-
+    min-height: 400px;
     margin-top: 70px;
     position: relative;
     display: flex;

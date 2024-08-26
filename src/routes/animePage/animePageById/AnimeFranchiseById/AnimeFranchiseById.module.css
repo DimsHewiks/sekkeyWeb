@@ -1,0 +1,47 @@
+.mainBlock{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.title{
+    font-family: "Roboto", sans-serif;
+    color: #b6664c;
+    margin-bottom: 20px;
+}
+.franchiseBlocks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    height: 300px;
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 250px;
+        max-width: 250px;
+        height: 250px;
+
+
+
+        & img{
+            width: 52%;
+            max-height: 70%;
+
+        }
+    }
+}
+.animeName{
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    & h4{
+        padding-top: 10px;
+        font-family: "Roboto", sans-serif;
+        color: #3a3a3a;
+    }
+}

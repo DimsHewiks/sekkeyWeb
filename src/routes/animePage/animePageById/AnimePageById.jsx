@@ -4,6 +4,8 @@ import {getAnimeById} from "../../../assets/API/GetAnimeById.js";
 import Style from './AnimePageById.module.css'
 
 import InfoHeader from "./infoHeader/InfoHeader.jsx";
+import ScreenshotBlock from "./screenshotsBlock/ScreenshotBlock.jsx";
+import AnimeFranchiseById from "./AnimeFranchiseById/AnimeFranchiseByid.jsx";
 
 export default function AnimePageById(){
     const idParam = useParams();
@@ -28,7 +30,8 @@ export default function AnimePageById(){
                 </h2>
                 <p className={Style.japaneseName}>{animeInfo['japanese']}</p>
                 <InfoHeader info={animeInfo}/>
-
+                <ScreenshotBlock images={animeInfo['screenshots']}/>
+                <AnimeFranchiseById id = {animeInfo['id']}/>
             </>
         )
     }
